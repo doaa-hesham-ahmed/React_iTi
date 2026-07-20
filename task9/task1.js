@@ -4,29 +4,13 @@ let player2='paper';//variable can be (rock,paper,scissors) output change in ord
 if(player1===player2){
     console.log("its a tie");
 }
-else if(player1==='rock' && player2==='paper'){
-    console.log("player2 is win");
-}
-
-else if(player1==='paper' && player2==='rock'){
-    console.log("player1 is win");
-}
-
-
-else if(player1==='rock' && player2==='scissors'){
-    console.log("player1 is win");
-}
-else if(player1==='scissors' && player2==='rock'){
-    console.log("player2 is win");
-}
-
-else if(player1==='paper' && player2==='scissors'){
-    console.log("player2 is win");
-}
-
-else if(player1==='scissors' && player2==='paper'){
+else if(
+    player1==='paper' && player2==='rock' ||
+    player1==='rock' && player2==='scissors'||
+    player1==='scissors' && player2==='paper'
+){
     console.log("player1 is win");
 }
 else{
-    console.log("invalid choice");
+    console.log("player2 is win");
 }
